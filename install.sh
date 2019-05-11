@@ -2,12 +2,12 @@
 SCRIPT_DIR=$(cd $(dirname $0); pwd)
 cd $SCRIPT_DIR
 
-# npmの確認
-# type npm
-# $? || {
-#     echo "npmが実行できません。Node.jsをインストールしてください"
-#     exit 1
-# }
+npmの確認
+type npm
+$? || {
+    echo "npmが実行できません。Node.jsをインストールしてください"
+    exit 1
+}
 
 # http-serverのインストール
 echo

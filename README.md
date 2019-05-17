@@ -19,7 +19,7 @@ Git Bashを開き、次のコマンド
 
 ```bash
 $ cd ~/Desktop
-$ git clone https://github.com/ariharananami/scratchx-local-util.git
+$ git clone https://github.com/ariharananami/scratchx-local-tool.git
 ```
 
 を実行。2つ目の`git clone`をするとデスクトップに1つフォルダーができるはず。続けてGit Bashで、

@@ -10,18 +10,22 @@ cd $SCRIPT_DIR
 
 # ファイルの更新処理
 if [ "$1" = "" ]; then
-    echo "ファイルをコピーして呼び出し"
+    echo "ふぇぇ…ファイルをコピーして呼び出します"
     cp update.sh update_.sh
+
+    echo "これ移行のログは nohup.out を参照してください"
     nohup ./update_.sh pull &
     rm -- "$0"
     exit
 
 # ファイルを更新
 elif [ "$1" = "pull" ]; then
-    echo "update.shを更新します"
     sleep 1
+    echo "コンフリクト防止の為、ファイルの変更を削除します"
+    git reset --hard HEAD
+    echo "リポジトリ上にある最新の変更を適用します"
     git pull origin master
-    ./update.sh patch &
+    # ./update.sh patch &
     rm -- "$0"
     echo "完了しました"
     read

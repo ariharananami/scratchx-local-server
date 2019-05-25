@@ -1,6 +1,6 @@
-SCRIPT_DIR=$(cd $(dirname $0); pwd)         # このファイルのあるディレクトリ
+SCRIPT_DIR="$(cd $(dirname $0); pwd)"       # このファイルのあるディレクトリ
 PATH_TO_IE="C:\Program Files\internet explorer\iexplore.exe"
-URL_TO_EXT="https://ariharananami.github.io/ev3_scratch/ev3_scratch.js"
+URL_TO_EXT="http://localhost/ev3_scratch/ev3_scratch.js"
 
 cd $SCRIPT_DIR
 

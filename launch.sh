@@ -11,7 +11,7 @@ sleep 3
 
 echo
 echo "IEを開くよ"
-"$PATH_TO_IE" "http://localhost/scratchx/?url=$URL_TO_EXT"
+"$PATH_TO_IE" "http://localhost/scratchx/index.html?url=$URL_TO_EXT"
 echo
 echo "ふぇぇ"
 read

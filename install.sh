@@ -22,5 +22,5 @@ echo
 git clone https://github.com/ariharananami/scratchx.git
 
 echo
-echo "ふぇぇ"
+echo "完了しました。続いて launch.sh を起動し、実際に起動することを確かめてください"
 read

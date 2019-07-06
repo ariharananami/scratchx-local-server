@@ -6,7 +6,7 @@ cd $SCRIPT_DIR
 
 echo
 echo "サーバを起動するよ"
-nohup http-server -p 80 &
+nohup http-server -p 80 . &
 sleep 3
 
 echo
